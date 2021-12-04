@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "outDir": "build",
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "baseUrl": ".",
+    "lib": [
+      "ESNext",
+      "dom"
+    ],
+    "moduleResolution": "Node",
+    "target": "ESNext",
+    "module": "ESNext"
+  },
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "**/*.test.t{s,sx}",
+    "src/test/**/*",
+    "src/webtest/**/*"
+  ],
+  "include": [
+    "src/**/*"
+  ]
+}
+

@@ -4,10 +4,10 @@ import { render, waitForElementToBeRemoved } from '@testing-library/react';
 import {
   ApolloClient,
   InMemoryCache,
-  ApolloProvider,
-  useQuery,
-  gql
-} from '@apollo/client';
+} from '@apollo/client/core';
+import { ApolloProvider } from '@apollo/client/react/context/ApolloProvider';
+import { useQuery } from '@apollo/client/react/hooks';
+import { gql } from 'graphql-tag';
 import { makeExecutableSchema } from '@graphql-tools/schema';
 import { SchemaLink } from '@apollo/client/link/schema';
 

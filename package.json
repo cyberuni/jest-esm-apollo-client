@@ -29,6 +29,9 @@
     ],
     "preset": "ts-jest/presets/default-esm",
     "transform": {},
+    "transformIgnorePatterns": [
+      "node_modules/(?!(ts-invariant)/)"
+    ],
     "extensionsToTreatAsEsm": [
       ".ts",
       ".tsx"
